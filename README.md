@@ -2,7 +2,7 @@
 
 ## About
 
-Ruby on Rails + MySQL + Docker での REST API 開発（View なし）の実験場
+Ruby on Rails + MySQL + Docker での REST API 開発（View なし）の素振り
 
 ## Dependencies
 
