@@ -5,7 +5,7 @@
 DB_NAME="database"
 DB_PATH="./docker/db/mysql_data/${DB_NAME}"
 DB_CORE_PATH="${DB_PATH}/schema_migrations.frm"
-RUN_COMMAND="docker-compose exec app sh -c \"bundle exec rails s -b 0.0.0.0 -p 8080\""
+RUN_COMMAND="docker-compose exec app sh -c \"bundle exec rails s -b 0.0.0.0 -p 3383\""
 
 # docker-compose up 直後の場合DBが作られるのを待つ
 if [ -e ${DB_CORE_PATH} ]; then

@@ -9,7 +9,7 @@ services:
     tty: true
     container_name: rails-api-template-app
     ports:
-      - 8080:8080
+      - 3383:3383
     volumes:
       - ./src:/app
       - ./openapi.yml:/docs/openapi.yml
@@ -28,6 +28,7 @@ services:
   mysql:
     image: mysql:5.7
     container_name: rails-api-template-mysql
+    platform: linux/amd64
     hostname: mysql
     volumes:
       - ./docker/db/mysql_data:/var/lib/mysql
